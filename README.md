@@ -18,3 +18,9 @@ Make sure virtual device is created from Android Studio
 If code does not work do add following in command prompt
 
 appium driver install uiAutomator2
+
+if things dont work use
+
+adb kill-server
+
+adb start-server
