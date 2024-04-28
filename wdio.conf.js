@@ -1,3 +1,4 @@
+let {join} = require('path');
 exports.config = {
     //
     // ====================
@@ -55,7 +56,7 @@ exports.config = {
         // capabilities for local Appium web tests on an Android Emulator
         platformName: 'Android',
         "appium:deviceName": 'Android GoogleAPI Emulator',
-        "appium:app":'./ApiDemos-debug.apk',
+        "appium:app":join(process.cwd(),'./ApiDemos-debug.apk'),
         //'appium:platformVersion': '12.0',
         'appium:automationName': 'UiAutomator2'
     }],
